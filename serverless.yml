@@ -18,7 +18,7 @@ iamRoleStatements:
         - dynamodb:GetItem
         - dynamodb:UpdateItem
       Resource: 
-        - { "Fn::GetAtt": ["MarketDynamoDbTableJUAND", "Arn" ] }
+        - { "Fn::GetAtt": ["MarketDynamoDbTable", "Arn" ] }
 
 functions:
   seek:
