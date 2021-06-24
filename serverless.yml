@@ -18,7 +18,7 @@ iamRoleStatements:
         - dynamodb:GetItem
         - dynamodb:UpdateItem
       Resource: 
-        - { "Fn::GetAtt": ["MarketDynamoDbTableDiego", "Arn" ] }
+        - { "Fn::GetAtt": ["MarketDynamoDbTableJuanchito", "Arn" ] }
 
 functions:
   seek:
@@ -36,7 +36,7 @@ functions:
 
 resources:
   Resources:
-    MarketDynamoDbTableDiego:
+    MarketDynamoDbTableJuanchito:
       Type: 'AWS::DynamoDB::Table'
       Properties:
         AttributeDefinitions:
