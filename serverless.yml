@@ -1,4 +1,4 @@
-service: hello-serverless
+service: hello-serverless-juancho
 
 provider:
   name: aws
@@ -18,7 +18,7 @@ iamRoleStatements:
         - dynamodb:GetItem
         - dynamodb:UpdateItem
       Resource: 
-        - { "Fn::GetAtt": ["MarketDynamoDbTable", "Arn" ] }
+        - { "Fn::GetAtt": ["MarketDynamoDbTableJUAND", "Arn" ] }
 
 functions:
   seek:
