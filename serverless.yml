@@ -48,7 +48,7 @@ resources:
         KeySchema:
             - AttributeName: "itemID"
               KeyType: "HASH"
-        TableName: "Market"
+        TableName: "MarketDiego"
 
 plugins:
   - serverless-offline
