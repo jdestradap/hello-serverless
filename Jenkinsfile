@@ -5,6 +5,8 @@ pipeline{
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
                     sh 'npm install'
+                    sh 'npm rebuild'
+                    sh 'npm run build --skip-test --if-present'
                 }
             }            
         } 
